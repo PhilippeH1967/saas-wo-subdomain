@@ -1,0 +1,34 @@
+fr:
+
+
+  activerecord:
+      attributes:
+         entreprise:
+          name: Nom
+          subdomain: Domaine du site
+          owner: Propriétaire du domaine
+          name: Nom de compagnie
+          street: No Rue et Nom de rue
+          town: Ville
+          country: Pays
+          state: Etat
+          zipcode: Code postal
+
+      errors:
+        models:
+          entreprise:
+            attributes:
+              name:
+              subdomain:
+              owner_id:
+              name:
+              street:
+              town:
+              country:
+              state:
+              zipcode:
+  entreprise:
+    new:
+      title: "Creation d'une entreprise"
+      Createentreprise: "Creation"
+      subdomain: Domaine

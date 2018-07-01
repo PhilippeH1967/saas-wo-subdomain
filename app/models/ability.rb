@@ -8,7 +8,7 @@ class Ability
 
     user ||= User.new
 
-    alias_action  :read, :update, :destroy, to :crud # crud peut modifier et lire et detruire mais pas creer
+    alias_action  :read, :update, :destroy, :to => :crud # crud peut modifier et lire et detruire mais pas creer
 
     if user.id # pour la gestion du user. On ne peut voir que son propre ID - CRUD :
       can :crud, User, {user_id: user.id} # ne pas voir, modifier que son user ID

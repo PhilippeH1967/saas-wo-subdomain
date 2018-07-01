@@ -35,5 +35,5 @@ class User < ApplicationRecord
                     :default_url => "/assets/default_image.jpeg"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
-
+  has_many :account, inverse_of: :owner
 end

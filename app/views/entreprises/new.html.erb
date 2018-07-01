@@ -1,0 +1,83 @@
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+        <%= t('entreprise.new.title') %>
+      </div>
+
+      <div class="panel-body">
+        <div class="container">
+
+      <div class="row">
+          <%= form_for @entreprise do |f| %>
+          <%= render 'shared/message' %>
+
+          <div class="row">
+            <div class="form-group">
+              <%= f.label :subdomain %>
+              <%= f.text_field :subdomain %>
+            </div>
+          </div>
+
+            <div class="row">
+                <div class="form-group">
+                  <%= f.label :name, class: 'form-label' %><br />
+                  <%= f.text_field :name, autofocus: true, autocomplete: "Nom",class: 'form-control' %>
+                </div>
+            </div>
+
+          <div class="row">
+            <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :street, class: 'form-label' %><br />
+                    <%= f.text_field :street, autofocus: true, autocomplete: "Adress",class: 'form-control' %>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :town, class: 'form-label' %><br />
+                    <%= f.text_field :town, autofocus: true, autocomplete: "Ville",class: 'form-control' %>
+                  </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :state, class: 'form-label' %><br />
+                    <%= f.text_field :state, autofocus: true, autocomplete: "Etat",class: 'form-control' %>
+                  </div>
+            </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :country, class: 'form-label' %><br />
+                    <%= f.text_field :country, autofocus: true, autocomplete: "Pays",class: 'form-control' %>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :zipcode, class: 'form-label' %><br />
+                    <%= f.text_field :zipcode, autofocus: true, autocomplete: "Zipcode",class: 'form-control' %>
+                  </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="actions">
+                <%= f.submit t('entreprise.new.title'), class: "btn btn-normal btn-block" %>
+              </div>
+            </div>
+          </div>
+             <% end %>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+

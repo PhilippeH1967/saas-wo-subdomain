@@ -5,5 +5,7 @@ Rails.application.routes.draw do
                   :path_names=>{:sign_in=>'login', :sign_out=>'logout', :edit=>'Profile'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  resources :entreprises
+
   root 'pages#home'
 end
